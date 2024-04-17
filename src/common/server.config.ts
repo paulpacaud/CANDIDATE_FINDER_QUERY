@@ -9,5 +9,6 @@ export const config = {
     DB_PASSWORD: process.env.DB_PASSWORD,
     DB_DATABASE: process.env.DB_DATABASE,
     DB_PORT: process.env.DB_PORT,
-    DB_SSL: process.env.DB_SSL || 'true'
+    DB_SSL: process.env.DB_SSL || 'true',
+    OPENAI_API_KEY: process.env.OPENAI_API_KEY,
 };

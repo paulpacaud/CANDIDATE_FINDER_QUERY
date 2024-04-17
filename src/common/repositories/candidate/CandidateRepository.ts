@@ -43,8 +43,8 @@ export class CandidateRepository implements ICandidateRepository {
         }
     }
 
-    public async findBestCandidatesForJob(Job: Job,  numberOfCandidates: number): Promise<Candidate[]> {
+    public async findBestCandidatesForJob(job_embedding: number[],  numberOfCandidates: number): Promise<Candidate[]> {
+        // query pinecone to find the most similar candidates with respect to the job_embedding
 
-        return [{ name: 'John Doe', email: "john.doe@gmail.com", phone: "0684567345", cv: "cv de john doe" }]
     }
 }

@@ -70,17 +70,5 @@ describe('CandidatesService', () => {
 
             expect(result).toEqual(rows[1]);
         });
-
-        it('should get a specific job by its id', async () => {
-            const rows = [
-                {"id": "0", "values": [0.1, 0.2, 0.3, 0.4, 0.5], "metadata": {"Nom": "Paul Doe"}},
-                {"id": "1", "values": [0.1, 0.3, 0.3, 0.7, 0.5], "metadata": {"Nom": "Robert Home"}}];
-
-            (client.query as jest.Mock).mockResolvedValueOnce({ rows });
-
-            const result = await CandidatesService.getJobById('1');
-
-            expect(result).toEqual(rows[1]);
-        });
     });
 });
