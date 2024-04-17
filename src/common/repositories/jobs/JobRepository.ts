@@ -1,4 +1,3 @@
-import {Candidate,CandidateVector} from "../../interfaces/candidate.interface";
 import {IJobRepository} from "./IJobRepository";
 import PineconeUtils from "../../utils/pinecone.utils";
 import PostgreDatabaseUtils from "../../utils/postgreDatabase.utils";

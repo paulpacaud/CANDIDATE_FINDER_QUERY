@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.ts",
   "scripts": {
-    "test:unit": "ENV_FILE=./config/.env.test jest",
+    "test": "jest",
     "start": "node src/server.ts",
     "watch": "nodemon src/server.ts"
   },
@@ -22,6 +22,7 @@
     "openai": "^4.36.0",
     "pg": "^8.11.5",
     "pinecone": "^0.1.0",
+    "ts-jest": "^29.1.2",
     "ts-node": "^10.9.2",
     "yarn": "^1.22.22"
   },
