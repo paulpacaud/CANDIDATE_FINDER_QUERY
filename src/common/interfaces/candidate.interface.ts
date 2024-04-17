@@ -4,3 +4,8 @@ export interface Candidate {
     phone: string;
     cv: string;
 }
+
+export interface CandidateVector {
+    name: string;
+    id: string;
+}

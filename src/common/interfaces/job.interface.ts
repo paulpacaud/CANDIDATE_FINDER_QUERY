@@ -8,3 +8,9 @@ export interface JobQuery {
     job: Job;
     numberOfCandidates: number;
 }
+
+export interface JobVector {
+    jobTitle: string;
+    jobCompany: string;
+    id: string;
+}

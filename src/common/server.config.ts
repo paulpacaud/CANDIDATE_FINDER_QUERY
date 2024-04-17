@@ -11,4 +11,5 @@ export const config = {
     DB_PORT: process.env.DB_PORT,
     DB_SSL: process.env.DB_SSL || 'true',
     OPENAI_API_KEY: process.env.OPENAI_API_KEY,
+    PINECONE_API_KEY: process.env.PINECONE_API_KEY
 };

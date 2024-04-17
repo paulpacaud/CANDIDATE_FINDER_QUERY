@@ -38,7 +38,7 @@ describe('CandidatesService', () => {
 
 
 
-        it('should find the best candidates for a job', async () => {
+        it('should find the best candidates for a jobs', async () => {
             const rows = [
                 {"id": "0", "values": [0.1, 0.2, 0.3, 0.4, 0.5], "metadata": {"Nom": "Paul Doe"}},
                 {"id": "1", "values": [0.1, 0.3, 0.3, 0.7, 0.5], "metadata": {"Nom": "Robert Home"}}];
@@ -53,13 +53,13 @@ describe('CandidatesService', () => {
             expect(result).toEqual(rows[1]);
         });
 
-        it('should find all the candidates who applied for a job', async () => {
+        it('should find all the candidates who applied for a jobs', async () => {
 
         });
     });
 
     describe('queryPostgre', () => {
-        it('should get a specific candidate by its id', async () => {
+        it('should get a specific candidates by its id', async () => {
             const rows = [
                 {"id": "0", "values": [0.1, 0.2, 0.3, 0.4, 0.5], "metadata": {"Nom": "Paul Doe"}},
                 {"id": "1", "values": [0.1, 0.3, 0.3, 0.7, 0.5], "metadata": {"Nom": "Robert Home"}}];

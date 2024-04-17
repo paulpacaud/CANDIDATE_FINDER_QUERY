@@ -35,13 +35,13 @@ describe('JobsService', () => {
             expect(result).toEqual(rows);
         });
 
-        it('should find all the candidates who applied for the most similar job', async () => {
+        it('should find all the candidates who applied for the most similar jobs', async () => {
 
         });
     });
 
     describe('queryPostgre', () => {
-        it('should get a specific job by its id', async () => {
+        it('should get a specific jobs by its id', async () => {
             const rows = [
                 {"id": "0", "title": "Software Developer", "description": "Code in Typescript", "company": "Google"},
                 {"id": "1", "title": "Bûcheron", "description": "Coupe du bois", "company": "WoodenCo"}];

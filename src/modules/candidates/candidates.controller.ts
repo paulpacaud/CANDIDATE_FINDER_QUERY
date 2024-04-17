@@ -16,7 +16,7 @@ export const CandidatesController = {
     },
 
     getAllCandidates: async (req: Request, res: Response): Promise<void> => {
-        const candidates = await CandidatesService.getAllCandidates();
+        const candidates = await CandidatesService.getAllCandidateVectors(req.body.limit, req.body.page, req.body.search);
         res.json({ candidates });
     }
 };

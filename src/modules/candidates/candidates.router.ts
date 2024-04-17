@@ -5,7 +5,6 @@ import {Router} from "express";
 
 const candidatesRouter = Router();
 
-
 candidatesRouter.post('/job-matching/',
     validator.body(CandidateDtos.findBestCandidatesForJob),
     CandidatesController.findBestCandidatesForJob);
@@ -15,5 +14,6 @@ candidatesRouter.get('/:id',
     CandidatesController.getCandidateById);
 
 candidatesRouter.get('/',
+    validator.params(CandidateDtos.getAllCandidates),
     CandidatesController.getAllCandidates);
 export default candidatesRouter;
