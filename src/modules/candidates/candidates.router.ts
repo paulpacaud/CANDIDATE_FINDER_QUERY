@@ -14,6 +14,6 @@ candidatesRouter.get('/:id',
     CandidatesController.getCandidateById);
 
 candidatesRouter.get('/',
-    validator.params(CandidateDtos.getAllCandidates),
+    validator.body(CandidateDtos.getAllCandidates),
     CandidatesController.getAllCandidates);
 export default candidatesRouter;
