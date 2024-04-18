@@ -12,7 +12,7 @@ app.use(cors());
 app.use('/v1', router);
 app.use(errorMiddleware);
 
-const port: number = config.PORT ;
+const port: number = 8080 ;
 
 const server = http.createServer(app);
 
