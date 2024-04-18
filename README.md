@@ -11,7 +11,9 @@ The COMMAND and QUERY parts are built with NodeJS and Express, and deployed on A
 
 ## Related repositories
 CANDIDATE_FINDER_QUERY: https://github.com/paulpacaud/CANDIDATE_FINDER_QUERY
+
 CANDIDATE_FINDER_COMMAND: https://github.com/WalidAstaoui/CANDIDATE_FINDER_COMMAND
+
 CANDIDATE_FINDER_SERVERLESS_EMBEDDING: https://github.com/paulpacaud/CANDIDATE_FINDER_SERVERLESS_EMBEDDING
 
 ## To start
