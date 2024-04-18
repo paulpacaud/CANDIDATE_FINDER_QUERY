@@ -16,6 +16,42 @@ CANDIDATE_FINDER_COMMAND: https://github.com/WalidAstaoui/CANDIDATE_FINDER_COMMA
 
 CANDIDATE_FINDER_SERVERLESS_EMBEDDING: https://github.com/paulpacaud/CANDIDATE_FINDER_SERVERLESS_EMBEDDING
 
+## Exemples de requêtes
+
+## Recherche de candidats liés au mot clé de la recherche (comme pour une barre de recherche)
+GET : http://localhost:8080/v1/candidates/
+
+Exemple de corps de requête :
+
+{"limit": 4, "page": 0, "search": "soft"}
+
+## Recherche des informations complètes sur un candidat par son id
+GET http://localhost:8080/v1/candidates/3
+
+## Recherche des candidats les plus similaires à la description d'un poste
+POST http://localhost:8080/v1/candidates/job-matching/
+
+Exemple de corps de requête :
+
+{
+"job": {
+"jobTitle": "Responsable Marketing",
+"jobDescription": "Gérer la communication interne et externe de toute l'entreprise",
+"jobCompany": "Google"
+},
+"numberOfCandidates": 2
+}
+
+## Recherche de jobs liés au mot clé de la recherche (comme pour une barre de recherche)
+GET http://localhost:8080/v1/jobs/
+
+Exemple de corps de requête :
+
+{"limit": 4, "page": 0, "search": "soft"}
+
+## Recherche des informations complètes sur un job par son id
+GET http://localhost:8080/v1/jobs/5
+
 ## To start
 
 > yarn install
